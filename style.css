@@ -1,0 +1,89 @@
+body{
+  width: 1440px;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+}
+p{
+  line-height: 1.5;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 90px;
+}
+
+.compartment1{
+margin: 150px 300px 150px ;
+  border-radius: 2% 0  0 2%;
+  padding: 30px;
+  width: 250px;
+  height: 370px;
+background-color: hsl(31, 77%, 52%);
+width: 15%;
+}
+.btn1 {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: hsl(31, 77%, 52%);
+  font-size: 20px;
+  background: hsl(0, 0%, 95%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.compartment2{
+  margin: 150px 300px 150px;
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  left: 281px;
+  width: 250px;
+  height: 370px;
+  background-color: hsl(184, 100%, 22%);
+  width: 15%;
+}
+
+.btn2 {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: hsl(184, 100%, 22%);
+  font-size: 20px;
+  background: hsl(0, 0%, 95%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.compartment3{
+  margin: 150px 300px 150px ;
+  border-radius: 0 2%  2% 0;
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  left: 550px;
+background-color: hsl(179, 100%, 13%);
+width: 250px;
+height: 370px;
+width: 15%;
+}
+.btn3 {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: hsl(179, 100%, 13%);
+  font-size: 20px;
+  background: hsl(0, 0%, 95%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 15px; text-align: center;
+  margin-bottom: 20px;
+}
