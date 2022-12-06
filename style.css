@@ -1,89 +1,124 @@
-body{
-  width: 1440px;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 h1{
   font-family: 'Big Shoulders Display', cursive;
-  color: hsl(0, 0%, 95%);
+  color: white;
+  margin: 20px;
 }
 p{
   line-height: 1.5;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: white;
+  margin: 20px;
   margin-bottom: 90px;
 }
 
-.compartment1{
-margin: 150px 300px 150px ;
-  border-radius: 2% 0  0 2%;
-  padding: 30px;
-  width: 250px;
-  height: 370px;
-background-color: hsl(31, 77%, 52%);
-width: 15%;
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 200px auto;
 }
-.btn1 {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: hsl(31, 77%, 52%);
-  font-size: 20px;
-  background: hsl(0, 0%, 95%);
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+
+.compartment1, .compartment2, .compartment3{
+border: 1px solid black;
+padding: 20px;
+width: 300px;
+height: 450px;
+}
+.compartment1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
 }
 
 .compartment2{
-  margin: 150px 300px 150px;
-  padding: 30px;
-  position: absolute;
-  top: 0px;
-  left: 281px;
-  width: 250px;
-  height: 370px;
   background-color: hsl(184, 100%, 22%);
-  width: 15%;
-}
-
-.btn2 {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: hsl(184, 100%, 22%);
-  font-size: 20px;
-  background: hsl(0, 0%, 95%);
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
 }
 
 .compartment3{
-  margin: 150px 300px 150px ;
-  border-radius: 0 2%  2% 0;
-  padding: 30px;
-  position: absolute;
-  top: 0px;
-  left: 550px;
-background-color: hsl(179, 100%, 13%);
-width: 250px;
-height: 370px;
-width: 15%;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.btn3 {
+
+svg{
+  margin: 20px;
+}
+.btn1, .btn2, .btn3 {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
-  color: hsl(179, 100%, 13%);
   font-size: 20px;
-  background: hsl(0, 0%, 95%);
+  margin: 20px;
   padding: 10px 20px 10px 20px;
+  margin: 20px;
   text-decoration: none;
 }
+.btn1{
+  color: hsl(31, 77%, 52%);
+  background: hsl(0, 0%, 95%);
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+  background: hsl(0, 0%, 95%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+  background: hsl(0, 0%, 95%);
+}
+
+.btn1:hover{
+  color: #fff;
+  background-color: hsl(31, 77%, 52%);
+  border: 2px solid white;
+}
+
+.btn2:hover{
+  color: #fff;
+  background-color: hsl(184, 100%, 22%);
+  border: 2px solid white;
+}
+
+.btn3:hover{
+  color: #fff;
+  background-color: hsl(179, 100%, 13%);
+  border: 2px solid white;
+}
+
 
 .attribution {
   font-size: 15px; text-align: center;
   margin-bottom: 20px;
+}
+.attribution a{
+  color: black;
+}
+
+
+@media screen  and (max-width: 800px) {
+  .main{
+    flex-direction: column;
+  }
+
+  .main{
+    margin: 100px auto;
+  }
+
+  .compartment1{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .compartment3{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
 }
